@@ -35,6 +35,10 @@
 			} else {
 				inputList = input.value.split(' ');
 				if (inputList[0] != 'grails') {
+					if(inputList[0] == 'grail') {
+						console.value = "Quase lá.. o comando é escrito no plural!";
+						return;
+					}else
 					console.value = "Acho que está faltando o comando principal meu chapa!";
 					return;
 				}
